@@ -32,7 +32,7 @@ struct STable
 	{
 		maxn=data.size()+1;log_init();mem_init();min_max=max_min;
 		for(uint64_t i=0;i<data.size();i++)
-			_data[i+1][0]=data[i+10];
+			_data[i+1][0]=data[i];
 		for(uint64_t l=1;l<=_log[maxn];l++)
 		{
 			for(int s=1;s<=maxn-(1<<l)+1;s++)
